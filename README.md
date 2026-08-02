@@ -5,12 +5,12 @@
 <h1 align="center">Auto Clicker</h1>
 
 <p align="center">
-  A lightweight, cross-platform, configurable auto-clicking utility for Windows, macOS, and Linux.
+  A lightweight, cross-platform auto-clicking utility for Windows, macOS, and Linux.
 </p>
 
 <p align="center">
   <img alt="platforms" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue">
-  <img alt="python" src="https://img.shields.io/badge/python-3.10%2B-blue">
+  <img alt="release" src="https://img.shields.io/badge/release-v1.0.0-blue">
   <img alt="build" src="https://img.shields.io/badge/build-passing-brightgreen">
   <img alt="license" src="https://img.shields.io/badge/license-TBD-lightgrey">
 </p>
@@ -19,9 +19,9 @@
 
 ## Overview
 
-**Auto Clicker** is a small desktop app for automating mouse clicks with precise timing. It's built with PyQt6 for the UI and [`pynput`](https://pynput.readthedocs.io/) for cross-platform input injection, so the same codebase runs on Windows, macOS, and Linux (including Chrome OS via Crostini) without platform-specific forks.
+**Auto Clicker** is a small desktop app for automating mouse clicks with precise timing. It runs natively on Windows, macOS, and Linux (including Chrome OS), with a clean, simple interface designed for repetitive-click use cases — testing, gaming, form filling, or any workflow where you need clicks fired on a schedule instead of by hand.
 
-It's designed for repetitive-click use cases — testing, gaming, form filling, or any workflow where you need clicks fired on a schedule instead of by hand — with a clean UI, a global hotkey to start/stop from anywhere, and a system tray presence so it stays out of your way.
+It ships as a ready-to-run app for each platform, with a global hotkey to start/stop from anywhere and a system tray presence so it stays out of your way.
 
 ## Features
 
@@ -31,10 +31,9 @@ It's designed for repetitive-click use cases — testing, gaming, form filling, 
 - ⌨️ **Global hotkey toggle** — start/stop clicking from any window with a customizable hotkey (default `F6`)
 - 🧰 **System tray support** — minimize to tray or taskbar, with your preference remembered
 - ⚙️ **Persistent settings** — all click parameters and preferences are saved between sessions
-- 🔄 **Built-in auto-update** — WinSparkle on Windows, a GitHub Releases–based flow on macOS/Linux
-- 🛑 **Remote version kill switch** — a shipped build with a known issue can be remotely retired; affected running copies are notified and shut down gracefully instead of silently continuing
-- 🧪 **Tested core** — click engine, config persistence, single-instance guard, and updater logic are covered by an automated test suite
-- 🚀 **One-command CI builds** — GitHub Actions builds signed Windows/macOS/Linux binaries on every push and publishes them on tagged releases
+- 🔄 **Automatic updates** — the app checks for and installs new versions on its own
+- 🛑 **Safety net for bad releases** — if a shipped version ever has a serious issue, affected installs are notified and shut down gracefully instead of silently continuing
+- 🧪 **Reliability tested** — core click logic, settings, and update behavior are covered by an internal test suite
 
 ## Showcase
 
@@ -42,11 +41,11 @@ It's designed for repetitive-click use cases — testing, gaming, form filling, 
 
 | | |
 |---|---|
-| 🖥️ **Cross-platform** | Single codebase, native builds for Windows, macOS, and Linux |
-| ⚡ **Sub-millisecond accuracy** | Sleep-then-spin timing loop keeps click intervals tight even at high frequency |
+| 🖥️ **Cross-platform** | One app, native experience on Windows, macOS, and Linux |
+| ⚡ **Sub-millisecond accuracy** | Precision timing keeps click intervals tight even at high frequency |
 | 🪶 **Lightweight** | No background services beyond the app itself — starts, clicks, and gets out of the way |
-| 🔐 **Signed releases** | Windows/macOS builds and update feeds are cryptographically signed |
-| 🤖 **CI-built binaries** | Every release is built and published automatically via GitHub Actions |
+| 🔐 **Signed & verified releases** | Every release is signed to protect against tampering |
+| 🚀 **Continuously delivered** | New builds are tested and published automatically |
 
 *(Add screenshots or a short GIF of the app here once available — a picture of the click-settings panel and tray icon in action goes a long way for new visitors.)*
 
@@ -59,49 +58,25 @@ It's designed for repetitive-click use cases — testing, gaming, form filling, 
 
 **Legend:** ✅ Current • 🔧 Maintenance (critical fixes only) • 🚫 End of life (no longer supported)
 
-> A version can be remotely retired via the app's built-in kill switch if it ships with a serious bug (e.g. a broken updater). Affected installs are notified on their next check-in and prompted to update.
+> If a release ever ships with a serious issue, it can be remotely retired. Affected installs are notified on their next check-in and prompted to update.
 
 ## Getting Started
 
-### Requirements
+### Download
 
-- Python **3.10+**
-- Dependencies listed in [`requirements.txt`](requirements.txt) (PyQt6, pynput)
+Grab the latest release for your platform from the [Releases](../../releases) page:
 
-### Run from source
+- **Windows** — download and run the installer/executable
+- **macOS** — download the `.dmg`, then drag the app into Applications
+- **Linux** — download the release for your distribution and run it
 
-```bash
-# Clone the repository
-git clone https://github.com/ToshiroSky/auto-clicker.git
-cd auto-clicker
-
-# (Recommended) create a virtual environment
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch the app
-python auto_clicker_app.py
-```
+No additional setup, runtimes, or dependencies are required — just download and launch.
 
 ### Platform-specific notes
 
-- **macOS** — the app (or your terminal/Python interpreter, if running from source) needs **Accessibility** permission under *System Settings → Privacy & Security → Accessibility* for clicks to register.
-- **Linux (Wayland)** — works out of the box under X11/XWayland. On a pure-Wayland session without XWayland, you may need the `uinput` backend and access to `/dev/uinput` (add your user to the `input` group or set up the appropriate udev rule).
-- **Chrome OS** — the Linux (Crostini) container behaves like a regular Linux install; the same X11/XTest path applies.
-
-### Running tests
-
-```bash
-pip install -r requirements-dev.txt
-pytest
-```
-
-### Building a standalone binary
-
-Binaries are built with PyInstaller; see [`.github/workflows/build.yml`](.github/workflows/build.yml) for the exact build/sign/release pipeline used for official releases.
+- **macOS** — the app needs **Accessibility** permission under *System Settings → Privacy & Security → Accessibility* for clicks to register. macOS will prompt you for this on first launch.
+- **Linux (Wayland)** — works out of the box under most desktop sessions. On a pure-Wayland session without XWayland, you may need to grant input-device access (add your user to the `input` group).
+- **Chrome OS** — supported via the Linux (Crostini) environment.
 
 ## Usage
 
@@ -111,13 +86,13 @@ Binaries are built with PyInstaller; see [`.github/workflows/build.yml`](.github
 4. Press **Start** (or your configured hotkey — default `F6`) to begin clicking, and press it again to stop.
 5. Minimize to the tray or taskbar to keep it running in the background.
 
-## Contributing
+## Feedback & Issues
 
-Issues and pull requests are welcome. If you're proposing a larger change, please open an issue first to discuss what you'd like to change.
+Found a bug or have a feature request? Please open an issue describing what happened, your OS, and the app version.
 
 ## License
 
-*(No license file is currently included in this repository — add a `LICENSE` file and update this section before distributing binaries or accepting external contributions.)*
+*(No license has been finalized yet — add a `LICENSE` file and update this section before distributing publicly.)*
 
 ## Disclaimer
 
