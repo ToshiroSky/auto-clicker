@@ -47,8 +47,6 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 | 🔐 **Signed & verified releases** | Every release is signed to protect against tampering |
 | 🚀 **Continuously delivered** | New builds are tested and published automatically |
 
-*(Add screenshots or a short GIF of the app here once available — a picture of the click-settings panel and tray icon in action goes a long way for new visitors.)*
-
 ![Auto Clicker screenshot](Screenshot%202026-08-02%20170818.png)
 
 ## Release & Support Lifecycle
