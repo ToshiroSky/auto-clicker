@@ -49,12 +49,14 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 
 *(Add screenshots or a short GIF of the app here once available — a picture of the click-settings panel and tray icon in action goes a long way for new visitors.)*
 
+![Auto Clicker screenshot](Screenshot%202026-08-02%20170818.png)
+
 ## Release & Support Lifecycle
 
 | Version | Status | Platforms | Notes | Support Ends |
 |---------|--------|-----------|-------|---------------|
-| 1.0.0   | ✅ Current | Windows, macOS, Linux | Initial public release | 2026/9/2 |
-| 1.0.1   | 🔜 Planned | — | — | — |
+| 1.0.0   | ✅ Current | Windows, macOS, Linux | Initial public release | — |
+| —       | 🔜 Planned | — | Fill in as new versions ship | — |
 
 **Legend:** ✅ Current • 🔧 Maintenance (critical fixes only) • 🚫 End of life (no longer supported)
 
