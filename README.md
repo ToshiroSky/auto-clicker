@@ -60,6 +60,17 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 
 > If a release ever ships with a serious issue, it can be remotely retired. Affected installs are notified on their next check-in and prompted to update.
 
+## Supported Platforms & Versions
+
+| Platform | Minimum Version | Architecture | Status |
+|----------|------------------|---------------|--------|
+| Windows  | Windows 10 (1809+) | x64 | ✅ Fully supported |
+| macOS    | macOS 12 (Monterey)+ | Apple Silicon, Intel (x64) | ✅ Fully supported |
+| Linux    | Ubuntu 20.04+ / equivalent | x64 | ✅ Fully supported |
+| Chrome OS | Recent Chrome OS with Linux (Crostini) enabled | x64 | ⚠️ Supported via Linux container |
+
+> Older OS versions may still work but are untested and unsupported. If you run into issues on an unlisted platform or version, please open an issue with your OS details.
+
 ## Getting Started
 
 ### Download
