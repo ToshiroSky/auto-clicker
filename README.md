@@ -12,7 +12,7 @@
   <img alt="platforms" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue">
   <img alt="release" src="https://img.shields.io/badge/release-v1.0.0-blue">
   <img alt="build" src="https://img.shields.io/badge/build-passing-brightgreen">
-  <img alt="license" src="https://img.shields.io/badge/license-TBD-lightgrey">
+  <img alt="license" src="https://img.shields.io/badge/license-Proprietary-red">
 </p>
 
 ---
@@ -92,7 +92,9 @@ Found a bug or have a feature request? Please open an issue describing what happ
 
 ## License
 
-*(No license has been finalized yet — add a `LICENSE` file and update this section before distributing publicly.)*
+This project is proprietary software — see the [LICENSE](LICENSE) file for full terms.
+
+**In short:** you may download and use the app, but you may **not** modify it, claim ownership of it, or redistribute it as your own without prior written permission from the publisher.
 
 ## Disclaimer
 
