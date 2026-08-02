@@ -32,7 +32,6 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 - 🧰 **System tray support** — minimize to tray or taskbar, with your preference remembered
 - ⚙️ **Persistent settings** — all click parameters and preferences are saved between sessions
 - 🔄 **Automatic updates** — the app checks for and installs new versions on its own
-- 🛑 **Safety net for bad releases** — if a shipped version ever has a serious issue, affected installs are notified and shut down gracefully instead of silently continuing
 - 🧪 **Reliability tested** — core click logic, settings, and update behavior are covered by an internal test suite
 
 ## Showcase
@@ -54,7 +53,7 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 | Version | Status | Platforms | Notes | Support Ends |
 |---------|--------|-----------|-------|---------------|
 | 1.0.0   | ✅ Current | Windows, macOS, Linux | Initial public release | — |
-| —       | 🔜 Planned | — | Fill in as new versions ship | — |
+| —       | 🔜 Planned | — | — | — |
 
 **Legend:** ✅ Current • 🔧 Maintenance (critical fixes only) • 🚫 End of life (no longer supported)
 
