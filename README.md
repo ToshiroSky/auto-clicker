@@ -55,7 +55,7 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 | 1.0.0   | ✅ Current | Windows, macOS, Linux | Initial public release | 2026/9/3 |
 | —       | 🔜 Planned | — | — | — |
 
-**Legend:** ✅ Current • 🔧 Legacy (critical fixes only) • 🟡 End of Support (no longer supported) • 🔴 End of Life (Deprecated)
+**Legend:** ✅ Current • ⚫ Legacy (critical fixes only) • 🟡 End of Support (no longer supported) • 🔴 End of Life (Deprecated)
 
 > If a release ever ships with a serious issue, it can be remotely retired. Affected installs are notified on their next check-in and prompted to update.
 
