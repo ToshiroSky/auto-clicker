@@ -50,10 +50,10 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 
 ## Release & Support Lifecycle
 
-| Version | Status | Platforms | Notes | Released | Support Ends |
-|---------|--------|-----------|-------|---------------|---------------|
-| 1.0.0   | ✅ Current | Windows, macOS, Linux | Initial public release | 2026/8/2 | 2026/9/3 |
-| 1.1.0       | 🔜 Planned | — | — | — | — |
+| Version |  Series | Status | Platforms | Notes | Released | Support Ends |
+|---------|--------|--------|-----------|-------|---------------|---------------|
+| 1.0.0   | V1 Series | ✅ Current | Windows, macOS, Linux | Initial public release | 2026/8/2 | 2026/9/3 |
+| 1.1.0    | V1 Series |  🔜 Planned | — | — | — | — |
 
 **Legend:** ✅ Current • ⚫ Legacy (critical fixes only) • 🟡 End of Support (no longer supported) • 🔴 End of Life (Deprecated)
 
