@@ -53,7 +53,7 @@ It ships as a ready-to-run app for each platform, with a global hotkey to start/
 | Version |  Series | Status | Platforms | Notes | Released | Support Ends |
 |---------|--------|--------|-----------|-------|---------------|---------------|
 | 1.0.0   | Short-term | ✅ Current | Windows, macOS, Linux | Initial public release | 2026/8/2 | 2026/9/3 |
-| 1.1.0    | LTS |  🔜 Planned | — | — | — | — |
+| 1.1.0    | Short-term |  🔜 Planned | — | — | — | — |
 
 **Legend:** ✅ Current • ⚫ Legacy (critical fixes only) • 🟡 End of Support (no longer supported) • 🔴 End of Life (Deprecated)
 
