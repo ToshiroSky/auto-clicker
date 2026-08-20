@@ -47,7 +47,7 @@ It ships as a ready-to-run app, with a global hotkey to start/stop from anywhere
 | 🔋 **Near-zero resource usage** | Minimal CPU and memory footprint, even during long sessions |
 | 🔐 **Signed & verified releases** | Every release is signed to protect against tampering |
 
-![Auto Clicker screenshot](Screenshot%2026-08-20%232134.png)
+![Auto Clicker screenshot](Screenshot%202026-08-20%20232134.png)
 
 ## What's New in v1.1.0
 
