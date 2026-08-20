@@ -66,7 +66,7 @@ It ships as a ready-to-run app, with a global hotkey to start/stop from anywhere
 | Version | Series | Status | Platforms | Notes | Released | Support Ends |
 |---------|--------|--------|-----------|-------|---------------|---------------|
 | 1.0.0   | Short-term | ⚫ Legacy | Windows, macOS, Linux | Initial public release | 2026/8/2 | 2026/9/3 |
-| 1.1.0   | Short-term | ✅ Current | Windows | [Releases](../../releases) | 2026/8/21 | — |
+| 1.1.0   | Short-term | ✅ Current | Windows | [Releases](../../releases) | 2026/8/21 | 2026/9/23 |
 | 1.2.0   | Short-term | 📝 Planned | Windows | — | — | — |
 
 **Legend:** ✅ Current • ⚫ Legacy (critical fixes only) • 🟡 End of Support (no longer supported) • 🔴 End of Life (Deprecated)
