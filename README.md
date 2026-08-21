@@ -113,7 +113,7 @@ This project is proprietary software — see the [LICENSE](LICENSE) file for ful
 
 **In short:** you may download and use the app, but you may **not** modify it, claim ownership of it, or redistribute it as your own without prior written permission from the publisher.
 
-## Disclaimer
+## Additional
 This project has been created and is using now python + PyQt6 library
 
 ## Disclaimer
