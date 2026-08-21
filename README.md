@@ -19,7 +19,7 @@
 
 ## Overview
 
-**Auto Clicker** is a small desktop app for automating mouse clicks with precise timing. It runs natively on Windows, with a clean, simple interface designed for repetitive-click use cases — testing, gaming, form filling, or any workflow where you need clicks fired on a schedule instead of by hand.
+**Auto Clicker** is a small desktop app for automating mouse clicks with precise timing. It runs natively on Windows, with a clean, simple interface designed for repetitive-click use cases — testing, gaming, form filling, or any workflow where you need clicks fired on a schedule instead of by hand. 
 
 It ships as a ready-to-run app, with a global hotkey to start/stop from anywhere and a system tray presence so it stays out of your way.
 
@@ -114,5 +114,9 @@ This project is proprietary software — see the [LICENSE](LICENSE) file for ful
 **In short:** you may download and use the app, but you may **not** modify it, claim ownership of it, or redistribute it as your own without prior written permission from the publisher.
 
 ## Disclaimer
+This project has been created and is using now python + PyQt6 library
+
+## Disclaimer
 
 Auto-clicking may violate the terms of service of some games, applications, or platforms. Use responsibly and at your own risk.
+
