@@ -54,7 +54,7 @@ It ships as a ready-to-run app, with a global hotkey to start/stop from anywhere
 - 🛠️ Fixed random crashes and instances where the app would get blocked without reason
 - 🎨 Improved overall UI/UX for a smoother experience
 - 💻 **Windows-only going forward** — macOS and Linux support has been dropped
-- 📦 Reduced app size from 39MB to 34MB
+- 📦 Reduced app size from 39MB to 34MB — And it will be reduced even further in the future.   
 - 🔋 Significantly lowered CPU and memory usage (near-zero at idle)
 - ⚡ Doubled click speed and input response time
 - 🚫 Permanently removed the auto-update system — see note below
